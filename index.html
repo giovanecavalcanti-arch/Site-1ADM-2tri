@@ -21,8 +21,8 @@
             display: flex;
         }
         img{
-        width: 80px;
-        height: 80px;
+                width: 80px;
+                height: 80px;
         }
 
         .artigo-autor {
@@ -33,7 +33,7 @@
 </head>
 <body>
     <header>
-        <h1>Club dos fas de Banana</h1>
+        <h1>Club dos fãs de Banana</h1>
      <p>Venha compartilhar o amor por Banana</p>
     </header>
 
@@ -42,8 +42,21 @@
         <div>
             <h2>Primeiro post Bananesco</h2>
             <p>Sejam bem vindos ao Club de fãs de Banana. Aqui iremos apresentar as melhores pencas de bananas saudáveis sem agrotóxicos.</p> 
-            <p>feito por Giovane agricultor profissional de Bananas</p>
+            <p class="artigo-autor"> Feito por: Giovane Brigadeiro - agricultor profissional de Bananas.</p>
+            <button>🫃 <span>homem gravido</span></button>
         </div>    
     </main>
 </body>
+
+<script>
+    const botao = document.querySelector("button");
+    botao.addEventListener("click",botaoClicado);
+    
+    function botaoClicado(){
+        console.log("fui clicado");
+        let texto = botao.querySelector("spam");
+        texto.textContent++;
+    }
+</script>
+
 </html>
